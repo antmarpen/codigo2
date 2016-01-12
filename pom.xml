@@ -45,9 +45,9 @@
             <configuration>
               <artifactItems>
                 <artifactItem>
-                  <groupId>junit</groupId>
-                  <artifactId>junit</artifactId>
-                  <version>3.8.1</version>
+                  <groupId>es.egc</groupId>
+                  <artifactId>30270237Y</artifactId>
+                  <version>3.0-SNAPSHOT</version>
                   <type>jar</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.directory}/depliegue_temporal</outputDirectory>
