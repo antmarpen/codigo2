@@ -32,24 +32,35 @@
   <build>
     <plugins>
       <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-dependency-plugin</artifactId>
-          <version>2.10</version>
-          <executions>
-            <execution>
-              <id>copy</id>
-              <phase>package</phase>
-              <goals>
-                <goal>copy</goal>
-              </goals>
-              <configuration>
-                <type>jar</type>
-                <outputDirectory>${project.build.directory}/depliegue_temporal</outputDirectory>
-                <includeScope> runtime </includeScope> 
-              </configuration>
-            </execution>
-          </executions>
-        </plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.10</version>
+        <executions>
+          <execution>
+            <id>copy</id>
+            <phase>package</phase>
+            <goals>
+              <goal>copy</goal>
+            </goals>
+            <configuration>
+              <artifactItems>
+                <artifactItem>
+                  <groupId>junit</groupId>
+                  <artifactId>junit</artifactId>
+                  <version>3.8.1</version>
+                  <type>jar</type>
+                  <overWrite>false</overWrite>
+                  <outputDirectory>${project.build.directory}/depliegue_temporal</outputDirectory>
+                  <destFileName>optional-new-name.jar</destFileName>
+                </artifactItem>
+              </artifactItems>
+              <outputDirectory>${project.build.directory}/depliegue_temporal</outputDirectory>
+              <overWriteReleases>false</overWriteReleases>
+              <overWriteSnapshots>true</overWriteSnapshots>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
       </plugins>
     </build>
 </project>
