@@ -29,37 +29,9 @@
     </dependency>
   </dependencies>
   
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>2.10</version>
-        <executions>
-          <execution>
-            <id>copy</id>
-            <phase>package</phase>
-            <goals>
-              <goal>copy</goal>
-            </goals>
-            <configuration>
-              <artifactItems>
-                <artifactItem>
-                  <groupId>es.egc</groupId>
-                  <artifactId>30270237Y</artifactId>
-                  <version>3.0-SNAPSHOT</version>
-                  <type>jar</type>
-                  <overWrite>false</overWrite>
-                  <outputDirectory>${project.build.directory}/depliegue_temporal</outputDirectory>
-                </artifactItem>
-              </artifactItems>
-              <outputDirectory>${project.build.directory}/depliegue_temporal</outputDirectory>
-              <overWriteReleases>false</overWriteReleases>
-              <overWriteSnapshots>true</overWriteSnapshots>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      </plugins>
-    </build>
+  <properties>
+    <deploy.path>C:\Program Files (x86)\Jenkins\workspace\antonio_marcos_peña\target\depliegue_temporal</deploy.path>
+  </properties>
+
+  
 </project>
