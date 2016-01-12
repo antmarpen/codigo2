@@ -28,9 +28,9 @@
     	<scope>compile</scope>
     </dependency>
   </dependencies>
-
+  
   <build>
-    <deploy>${project.basedir}/target/depliegue_temporal</deploy>
+    <directory>${project.build.directory}/depliegue_temporal</directory>
   </build>
   
 </project>
