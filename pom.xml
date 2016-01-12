@@ -30,7 +30,7 @@
   </dependencies>
 
   <build>
-    <directory>${project.basedir}/target/depliegue_temporal</directory>
+    <deploy>${project.basedir}/target/depliegue_temporal</deploy>
   </build>
   
 </project>
