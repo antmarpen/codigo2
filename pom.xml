@@ -38,7 +38,7 @@
         <executions>
           <execution>
             <id>copy</id>
-            <phase>package</phase>
+            <phase>deploy</phase>
             <goals>
               <goal>copy</goal>
             </goals>
