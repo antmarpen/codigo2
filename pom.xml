@@ -16,9 +16,9 @@
   
   <distributionManagement>
     <repository>
-      <id></id>
-      <name> nombreRepo</name>
-      <url> file:\\ruta_carpeta_despliegue </url>
+      <id>test</id>
+      <name>examen</name>
+      <url> file:\\${project.build.directory}/depliegue_temporal</url>
     </repository>
 </distributionManagement>
 
