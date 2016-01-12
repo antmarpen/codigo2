@@ -51,7 +51,6 @@
                   <type>jar</type>
                   <overWrite>false</overWrite>
                   <outputDirectory>${project.build.directory}/depliegue_temporal</outputDirectory>
-                  <destFileName>optional-new-name.jar</destFileName>
                 </artifactItem>
               </artifactItems>
               <outputDirectory>${project.build.directory}/depliegue_temporal</outputDirectory>
