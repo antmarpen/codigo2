@@ -12,7 +12,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <deploy.path>C:\Program Files (x86)\Jenkins\workspace\antonio_marcos_peña\target\depliegue_temporal</deploy.path>
   </properties>
 
   <dependencies>
@@ -30,5 +29,18 @@
     </dependency>
   </dependencies>
 
+  <build>
+    <build>
+      <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>2.3.1</version>
+            <configuration>
+              <outputDirectory>depliegue_temporal</outputDirectory>
+            </configuration>
+          </plugin>
+    </plugins>
+  </build>
   
 </project>
